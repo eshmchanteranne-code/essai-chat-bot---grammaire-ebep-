@@ -1,0 +1,50 @@
+class FeedbackTutor {
+
+  constructor() {
+    this.aides = {};
+  }
+
+  verifier(idQuestion, reponseEleve, bonneReponse) {
+
+    if (!this.aides[idQuestion]) {
+      this.aides[idQuestion] = 1;
+    }
+
+    if (
+      reponseEleve.toLowerCase().trim() ===
+      bonneReponse.toLowerCase().trim()
+    ) {
+
+      this.aides[idQuestion] = 1;
+
+      return {
+        reussite: true,
+        message:
+          "✅ Bravo ! Ta réponse est correcte. Comment as-tu trouvé ?"
+      };
+    }
+
+    let niveau = this.aides[idQuestion];
+
+    const feedbacks = {
+
+      1: "❌ Observe bien le verbe.",
+
+      2: "💡 Cherche quand se passe l'action : hier, aujourd'hui ou demain.",
+
+      3: "🛠️ Utilise la stratégie : repère le verbe puis cherche le moment de l'action.",
+
+      4: "📚 Exemple : Les enfants ont joué. Cette action est terminée. C'est donc du passé.",
+
+      5: `✅ La bonne réponse était : ${bonneReponse}`
+    };
+
+    this.aides[idQuestion]++;
+
+    return {
+      reussite: false,
+      niveauAide: niveau,
+      message: feedbacks[niveau]
+    };
+  }
+}
