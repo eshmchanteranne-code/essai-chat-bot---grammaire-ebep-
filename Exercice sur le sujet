@@ -1,50 +1,74 @@
-class FeedbackTutor {
+class CoachFrancais:
 
-  constructor() {
-    this.aides = {};
-  }
+    def __init__(self):
+        self.niveau_aide = 1
 
-  verifier(idQuestion, reponseEleve, bonneReponse) {
+    def verifier(self, reponse_eleve, bonne_reponse):
 
-    if (!this.aides[idQuestion]) {
-      this.aides[idQuestion] = 1;
-    }
+        if reponse_eleve.lower() == bonne_reponse.lower():
 
-    if (
-      reponseEleve.toLowerCase().trim() ===
-      bonneReponse.toLowerCase().trim()
-    ) {
+            self.niveau_aide = 1
 
-      this.aides[idQuestion] = 1;
+            return """
+✅ Bravo !
 
-      return {
-        reussite: true,
-        message:
-          "✅ Bravo ! Ta réponse est correcte. Comment as-tu trouvé ?"
-      };
-    }
+Ta réponse est correcte.
 
-    let niveau = this.aides[idQuestion];
+🧠 Comment as-tu trouvé ?
+"""
 
-    const feedbacks = {
+        else:
 
-      1: "❌ Observe bien le verbe.",
+            if self.niveau_aide == 1:
 
-      2: "💡 Cherche quand se passe l'action : hier, aujourd'hui ou demain.",
+                self.niveau_aide += 1
 
-      3: "🛠️ Utilise la stratégie : repère le verbe puis cherche le moment de l'action.",
+                return """
+❌ Ce n'est pas la bonne réponse.
 
-      4: "📚 Exemple : Les enfants ont joué. Cette action est terminée. C'est donc du passé.",
+Observe bien le verbe.
 
-      5: `✅ La bonne réponse était : ${bonneReponse}`
-    };
+Essaie encore.
+"""
 
-    this.aides[idQuestion]++;
+            elif self.niveau_aide == 2:
 
-    return {
-      reussite: false,
-      niveauAide: niveau,
-      message: feedbacks[niveau]
-    };
-  }
-}
+                self.niveau_aide += 1
+
+                return """
+💡 Indice :
+
+Cherche quand se déroule l'action.
+
+Hier ?
+Aujourd'hui ?
+Demain ?
+"""
+
+            elif self.niveau_aide == 3:
+
+                self.niveau_aide += 1
+
+                return """
+🛠️ Stratégie :
+
+Repère le verbe.
+
+Puis demande-toi :
+
+- passé
+- présent
+- futur
+"""
+
+            else:
+
+                self.niveau_aide = 1
+
+                return f"""
+✅ Réponse attendue :
+
+{bonne_reponse}
+
+Retiens cette stratégie pour la prochaine fois.
+"""
