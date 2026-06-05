@@ -1,50 +1,50 @@
-# Exercice : Le verbe
+# Coach du verbe
 
 Bonjour !
 
-Je vais t'aider à réussir cet exercice.
+Je suis ton coach de français.
 
-Lis chaque phrase et réponds à la question.
+Je vais t'aider à apprendre :
 
-Si tu te trompes, ce n'est pas grave. Je te donnerai des indices pour t'aider.
+* le temps des verbes ;
+* l'infinitif ;
+* les groupes de verbes.
 
----
+Choisis un exercice.
 
-# Exercice 1 : Trouver le temps
+1. [Trouver le temps d'une phrase](temps1)
+2. [Trouver l'infinitif](infinitif1)
+3. [Trouver le groupe](groupe1)
 
-Phrase :
+## temps1
 
 Les enfants ont découvert une grotte ornée.
 
-Question :
-
 À quel temps est cette phrase ?
 
-Réponse attendue :
+1. [Passé](temps1_reussi)
+2. [Présent](temps1_erreur1)
+3. [Futur](temps1_erreur1)
 
-Passé
-
-Si l'élève répond "présent" :
-
-Niveau 1 :
+## temps1_erreur1
 
 ❌ Ce n'est pas la bonne réponse.
 
-Observe le groupe de mots :
+Indice :
+
+Observe les mots :
 
 **ont découvert**
 
-Essaie encore.
+1. [Je réessaie : passé](temps1_reussi)
+2. [Je pense toujours : présent](temps1_erreur2)
+3. [Je pense toujours : futur](temps1_erreur2)
 
-Niveau 2 :
+## temps1_erreur2
 
-💡 Cherche un mot qui ressemble au verbe **avoir**.
+💡 Nouvel indice :
 
-Le vois-tu dans la phrase ?
-
-Niveau 3 :
-
-🛠️ Quand on utilise :
+Quand on voit :
 
 * ai
 * as
@@ -55,128 +55,105 @@ Niveau 3 :
 
 avec un autre verbe,
 
-on parle souvent d'une action déjà terminée.
+l'action est souvent déjà terminée.
 
-Essaie à nouveau.
+1. [Passé](temps1_reussi)
+2. [Présent](temps1_solution)
+3. [Futur](temps1_solution)
 
-Niveau 4 :
-
-📚 Exemple :
-
-Ils ont joué au ballon.
-
-Cette action est terminée.
-
-La phrase est donc au passé.
-
-Compare avec ta phrase.
-
-Niveau 5 :
+## temps1_solution
 
 ✅ La bonne réponse est :
 
-Passé.
+PASSÉ
 
-Le verbe est "ont découvert".
+Explication :
+
+Le verbe est :
+
+**ont découvert**
 
 L'action est déjà terminée.
 
----
+🧠 Quelle stratégie pourrais-tu retenir ?
 
-# Exercice 2 : Trouver l'infinitif
+1. [Continuer](menu)
 
-Phrase :
+## temps1_reussi
+
+✅ Bravo !
+
+Tu as trouvé la bonne réponse.
+
+🧠 Comment as-tu trouvé ?
+
+1. [Continuer](menu)
+
+## menu
+
+Que souhaites-tu faire ?
+
+1. [Un autre exercice sur le temps](temps1)
+2. [Chercher un infinitif](infinitif1)
+3. [Chercher un groupe](groupe1)
+
+## infinitif1
 
 Les enfants ont découvert une grotte ornée.
 
-Question :
-
 Quel est l'infinitif du verbe ?
 
-Réponse attendue :
+1. [Découvrir](infinitif_reussi)
+2. [Découverte](infinitif_erreur)
 
-Découvrir
-
-Si l'élève répond autre chose :
-
-Niveau 1 :
+## infinitif_erreur
 
 ❌ Observe le verbe.
 
-Quel est le mot qui indique l'action ?
-
-Niveau 2 :
-
-💡 Utilise la formule :
+Utilise la phrase :
 
 "Il faut ..."
 
 Que peux-tu dire ?
 
-Il faut ________
+1. [Découvrir](infinitif_reussi)
 
-Niveau 3 :
+## infinitif_reussi
 
-📚 Exemple :
+✅ Bravo !
 
-Nous jouons.
+L'infinitif est :
 
-Il faut jouer.
+Découvrir
 
-L'infinitif est jouer.
+1. [Retour au menu](menu)
 
-Fais pareil avec ta phrase.
+## groupe1
 
-Niveau 4 :
+Le verbe est :
 
-✅ La réponse est :
+Découvrir
 
-Découvrir.
+À quel groupe appartient-il ?
 
----
+1. [1er groupe](groupe_erreur)
+2. [2e groupe](groupe_erreur)
+3. [3e groupe](groupe_reussi)
 
-# Exercice 3 : Trouver le groupe
+## groupe_erreur
 
-Question :
+💡 Rappel :
 
-À quel groupe appartient le verbe découvrir ?
+Les verbes du 1er groupe finissent en -er.
 
-Réponse attendue :
+Découvrir ne finit pas en -er.
 
-Troisième groupe.
+1. [3e groupe](groupe_reussi)
 
-Niveau 1 :
+## groupe_reussi
 
-❌ Regarde la terminaison du verbe.
+✅ Exact !
 
-Niveau 2 :
+Découvrir appartient au 3e groupe.
 
-💡 Les verbes du premier groupe finissent en -er.
-
-Est-ce le cas ici ?
-
-Niveau 3 :
-
-💡 Les verbes du deuxième groupe font :
-
-"nous finissons".
-
-Peut-on dire :
-
-"nous découvrissons" ?
-
-Niveau 4 :
-
-✅ Découvrir appartient au troisième groupe.
-
----
-
-# Question métacognitive
-
-Après chaque réussite :
-
-🧠 Comment as-tu trouvé ?
-
-ou
-
-🧠 Quelle stratégie t'a aidé ?
+1. [Retour au menu](menu)
